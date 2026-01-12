@@ -1,16 +1,46 @@
-# WSB-NLU Recruitment Task — React + Docker (Vite)
+# React + Docker Recruitment Task (WSB-NLU)
 
-Prosta aplikacja React wygenerowana przy użyciu Vite, skonteneryzowana z użyciem Dockera zgodnie z dobrymi praktykami (multi-stage build: Node.js -> Nginx).
+This repository contains a simple frontend application created as a recruitment task for WSB-NLU.  
+The goal of the task was to demonstrate basic frontend setup, Docker containerization, Git usage, and good container practices.
 
-## Wymagania
+---
+
+##  Task Objectives
+The project verifies:
+- understanding of basic version control (Git)
+- ability to work with Docker
+- application of good containerization practices
+- ability to prepare and document a simple application
+
+---
+
+##  Technologies Used
+- React
+- Vite
 - Docker
+- Nginx
+- Node.js (build stage only)
 
-## Struktura rozwiązania
-- `Dockerfile` - multi-stage build (build w Node, runtime w Nginx)
-- `nginx.conf` - konfiguracja Nginx dla SPA (`try_files ... /index.html`)
-- `.dockerignore` - ogranicza kontekst budowania obrazu
+---
 
-## Uruchomienie lokalne (dev)
+##  Project Structure
+- `src/` – React application source code  
+- `Dockerfile` – multi-stage Docker build (Node.js → Nginx)  
+- `nginx.conf` – Nginx configuration for SPA routing  
+- `.dockerignore` – limits Docker build context  
+- `README.md` – project documentation  
+
+---
+
+##  Frontend Boilerplate
+A simple React application was generated using **Vite + React**.  
+The application starts correctly and displays the default start page.
+
+### Run locally (development mode)
+**Requirements:**
+- Node.js >= 18
+- npm
+
 ```bash
 npm install
 npm run dev
