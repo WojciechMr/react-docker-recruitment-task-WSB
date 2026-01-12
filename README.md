@@ -33,9 +33,13 @@ This project verifies the following skills:
 
 .
 ├── src/                React application source code
+
 ├── Dockerfile          Multi-stage Docker build (Node.js → Nginx)
+
 ├── nginx.conf          Nginx configuration for SPA routing
+
 ├── .dockerignore       Limits Docker build context
+
 └── README.md           Project documentation
 
 ---
