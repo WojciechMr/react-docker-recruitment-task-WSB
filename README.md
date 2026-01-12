@@ -63,6 +63,7 @@ Requirements:
 Install dependencies and start the development server:
 
 npm install
+
 npm run dev
 
 The application will be available at:
