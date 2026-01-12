@@ -1,24 +1,22 @@
 # React + Docker Recruitment Task (WSB-NLU)
 
-This repository contains a simple frontend application created as part of a recruitment task for WSB-NLU.
+This repository contains a simple single-page frontend application created as part of a recruitment task for WSB-NLU.
 
-The purpose of this project is to demonstrate:
-- basic frontend setup with React
-- Docker containerization using best practices
-- proper Git repository structure
-- clear and concise technical documentation
+The goal of this project is to demonstrate a basic React setup, containerization using Docker with best practices, and clear technical documentation.
 
 ---
 
-## Task Objectives
+## Project Objectives
 
-The project verifies the following skills:
-- understanding of version control basics (Git)
-- ability to containerize applications using Docker
-- application of good containerization practices (multi-stage builds)
-- ability to prepare and document a simple application
+This project verifies the following skills:
+
+- understanding of Git and basic version control workflows
+- ability to build and containerize a frontend application using Docker
+- use of multi-stage Docker builds
+- preparation of clear and concise technical documentation
 
 ---
+
 
 ## Technologies Used
 
@@ -30,25 +28,29 @@ The project verifies the following skills:
 
 ---
 
+
 ## Project Structure
 
 .
-├── src/                React application source code  
-├── Dockerfile          Multi-stage Docker build (Node.js → Nginx)  
-├── nginx.conf          Nginx configuration for SPA routing  
-├── .dockerignore       Limits Docker build context  
-└── README.md           Project documentation  
+├── src/                React application source code
+├── Dockerfile          Multi-stage Docker build (Node.js → Nginx)
+├── nginx.conf          Nginx configuration for SPA routing
+├── .dockerignore       Limits Docker build context
+└── README.md           Project documentation
 
 ---
 
-## Frontend Boilerplate
+
+## Frontend Application
 
 The frontend was generated using Vite + React.
 
 The application:
-- builds correctly
-- runs in development mode
-- displays the default start page
+- builds successfully
+- runs correctly in development mode
+- displays the default React start page
+
+The purpose of the application itself is to serve as a simple example for Docker containerization rather than application logic.
 
 ---
 
@@ -58,10 +60,10 @@ Requirements:
 - Node.js >= 18
 - npm
 
-Install and start:
+Install dependencies and start the development server:
 
-npm install  
-npm run dev  
+npm install
+npm run dev
 
 The application will be available at:
 
@@ -69,15 +71,20 @@ http://localhost:5173/
 
 ---
 
+
 ## Docker Setup (Production)
 
 The application is containerized using Docker with a multi-stage build.
 
-Stage 1:
-Build the React application using Node.js
+Build stages:
 
-Stage 2:
-Serve static files using Nginx
+Stage 1
+Builds the React application using Node.js
+
+Stage 2
+Serves the compiled static files using Nginx
+
+The Nginx configuration supports client-side routing for a single-page application.
 
 Build Docker image:
 
@@ -102,5 +109,11 @@ http://localhost:8080/
 - The repository is public and ready to be cloned and run locally
 
 ---
+
+## Possible Improvements
+
+- Add CI pipeline for automated builds
+- Add basic linting and formatting
+- Add environment-based configuration
 
 
