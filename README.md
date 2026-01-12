@@ -31,7 +31,7 @@ This project verifies the following skills:
 
 ## Project Structure
 
-.
+
 ├── src/                React application source code
 
 ├── Dockerfile          Multi-stage Docker build (Node.js → Nginx)
@@ -108,8 +108,8 @@ http://localhost:8080/
 ## Notes
 
 - The Docker image follows good practices:
-  - multi-stage build
-  - small final image size
+- multi-stage build
+- small final image size
 - Nginx is used as a production-ready web server
 - The repository is public and ready to be cloned and run locally
 
